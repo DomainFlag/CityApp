@@ -1,0 +1,52 @@
+package com.example.cchiv.cityapp;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        TextView textView = (TextView) findViewById(R.id.restaurants);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RestaurantsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        textView = (TextView) findViewById(R.id.sightseeing);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SightseeingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        textView = (TextView) findViewById(R.id.parks);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ParksActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        textView = (TextView) findViewById(R.id.events);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, EventsActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+}

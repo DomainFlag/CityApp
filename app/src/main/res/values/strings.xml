@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CityApp</string>
+
+    <string name="app_header_1">Restaurants</string>
+    <string name="app_header_2">SightSeeing</string>
+    <string name="app_header_3">Parks</string>
+    <string name="app_header_4">Events</string>
+
+</resources>
