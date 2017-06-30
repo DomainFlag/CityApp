@@ -19,13 +19,13 @@ public class ParksActivity extends AppCompatActivity {
         setContentView(R.layout.activity_parks);
 
         final ArrayList<ItemList> arrayList = new ArrayList<>();
-        arrayList.add(new ItemList("Stefan cel Mare Park ", R.drawable.park_1));
-        arrayList.add(new ItemList("Dendrarium Park",  R.drawable.park_2));
-        arrayList.add(new ItemList("Valea Morilor",  R.drawable.park_3));
-        arrayList.add(new ItemList("Botanical Garden of the Academy of Sciences of Moldova", R.drawable.park_4));
-        arrayList.add(new ItemList("Parcul Catedralei", R.drawable.park_5));
-        arrayList.add(new ItemList("Parcul Alunelul",  R.drawable.park_6));
-        arrayList.add(new ItemList("Goa Territory", R.drawable.park_7));
+        arrayList.add(new ItemList(getResources().getString(R.string.park_1), R.drawable.park_1));
+        arrayList.add(new ItemList(getResources().getString(R.string.park_2),  R.drawable.park_2));
+        arrayList.add(new ItemList(getResources().getString(R.string.park_3),  R.drawable.park_3));
+        arrayList.add(new ItemList(getResources().getString(R.string.park_4), R.drawable.park_4));
+        arrayList.add(new ItemList(getResources().getString(R.string.park_5), R.drawable.park_5));
+        arrayList.add(new ItemList(getResources().getString(R.string.park_6),  R.drawable.park_6));
+        arrayList.add(new ItemList(getResources().getString(R.string.park_7), R.drawable.park_7));
 
         ItemListAdapter itemListAdapter = new ItemListAdapter(this, arrayList, ContextCompat.getColor(this, R.color.color_2));
         ListView listView = (ListView) findViewById(R.id.list_item);

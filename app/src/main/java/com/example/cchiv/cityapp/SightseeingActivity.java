@@ -19,35 +19,20 @@ public class SightseeingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sightseeing);
 
         final ArrayList<ItemList> arrayList = new ArrayList<>();
-        arrayList.add(new ItemList("Ștefan cel Mare Central Park", "Relaxed park with landscaped " +
-                "gardens, monuments, a large fountain & busts of Romanian writers.", R.drawable
+        arrayList.add(new ItemList(getResources().getString(R.string.sightseeing_1), getResources().getString(R.string.sightseeing_summary_1), R.drawable
                 .sightseeing_1));
-        arrayList.add(new ItemList("National Museum of History of Moldova", "The National Museum " +
-                "of History of Moldova is a museum in Central Chişinău, Moldova.", R.drawable
+        arrayList.add(new ItemList(getResources().getString(R.string.sightseeing_2), getResources().getString(R.string.sightseeing_summary_2), R.drawable
                 .sightseeing_2));
-        arrayList.add(new ItemList("Nativity Cathedral, Chișinău", "The Cathedral of Christ's " +
-                "Nativity is the main cathedral of the Moldovan Orthodox Church in Central " +
+        arrayList.add(new ItemList(getResources().getString(R.string.sightseeing_3), getResources().getString(R.string.sightseeing_summary_3) +
                 "Chișinău, Moldova.", R.drawable.sightseeing_3));
-        arrayList.add(new ItemList("Chișinău Botanical Garden", "Large green space with " +
-                "reservoirs & around 10,000 species of plants ranging from roses to trees.", R
+        arrayList.add(new ItemList(getResources().getString(R.string.sightseeing_4), getResources().getString(R.string.sightseeing_summary_4), R
                 .drawable.sightseeing_4));
-        arrayList.add(new ItemList("Triumphal arch, Chișinău", "The Triumphal arch is a monument " +
-                "situated in Central Chişinău next to the Nativity Cathedral on Piața Marii " +
-                "Adunǎri Naționale nr. 2 and directly opposite Government House.", R.drawable
+        arrayList.add(new ItemList(getResources().getString(R.string.sightseeing_5), getResources().getString(R.string.sightseeing_summary_5), R.drawable
                 .sightseeing_5));
-        arrayList.add(new ItemList("National Museum of Fine Arts, Chișinău", "The National Museum" +
-                " of Fine Arts is a museum in Chișinău, Moldova, founded in November 1939 by " +
-                "Alexandru Plămădeală and Auguste Baillayre.", R.drawable.sightseeing_6));
-        arrayList.add(new ItemList("Chișinău City Hall", "Chişinău City Hall is a historical and " +
-                "architectural monument built in Italian Gothic style located in Central " +
-                "Chişinău, Moldova. Originally constructed to house the city Duma in 1901, the " +
-                "building was nearly destroyed during World War II.", R.drawable.sightseeing_7));
-        arrayList.add(new ItemList("St. Teodora de la Sihla Church", "The St. Teodora de la Sihla" +
-                " Church is a cathedral in Central Chişinău, Moldova.", R.drawable.sightseeing_8));
-        arrayList.add(new ItemList("Chișinău Water Tower", "The Chișinău Water Tower is an " +
-                "architectural monument of Chișinău, Moldova, located at 2 Mitropolit " +
-                "Bănulescu-Bodoni Street and built at the end of 19th century after a project by " +
-                "Alexander Bernadazzi. It was a main part of Chişinău's water system.", R
+        arrayList.add(new ItemList(getResources().getString(R.string.sightseeing_6), getResources().getString(R.string.sightseeing_summary_6), R.drawable.sightseeing_6));
+        arrayList.add(new ItemList(getResources().getString(R.string.sightseeing_7), getResources().getString(R.string.sightseeing_summary_7), R.drawable.sightseeing_7));
+        arrayList.add(new ItemList(getResources().getString(R.string.sightseeing_8), getResources().getString(R.string.sightseeing_summary_8), R.drawable.sightseeing_8));
+        arrayList.add(new ItemList(getResources().getString(R.string.sightseeing_9), getResources().getString(R.string.sightseeing_summary_9), R
                 .drawable.sightseeing_9));
 
         ItemListAdapter itemListAdapter = new ItemListAdapter(this, arrayList, ContextCompat

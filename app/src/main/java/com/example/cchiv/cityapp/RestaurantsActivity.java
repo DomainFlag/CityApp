@@ -19,14 +19,14 @@ public class RestaurantsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_restaurants);
 
         final ArrayList<ItemList> arrayList = new ArrayList<>();
-        arrayList.add(new ItemList("Eli Pili", "Text 1", R.drawable.restaurant_1, "str. Bucuresti"));
-        arrayList.add(new ItemList("Fusion Restaurant Jeraffe", "Text 1", R.drawable.restaurant_2, "Izmail st., 84, Chisinau 2001, Moldova"));
-        arrayList.add(new ItemList("Popasul Dacilor", "Text 1", R.drawable.restaurant_3, "str. Valea Crucii, 13, Chisinau, Moldova"));
-        arrayList.add(new ItemList("OSHO bar&kitchen", "Text 1", R.drawable.restaurant_4, "Bd. Decebal 7/1, Chisinau 2001, Moldova"));
-        arrayList.add(new ItemList("La Sarkis", "Text 1", R.drawable.restaurant_5, "Nateevici 113 A, Chisinau 2009, Moldova"));
-        arrayList.add(new ItemList("Mezzo Italian Restaurant", "Text 1", R.drawable.restaurant_6, "12 Dimitrie Cantemir, Chisinau 2012, Moldova"));
-        arrayList.add(new ItemList("Fanconi Cafe", "Text 1", R.drawable.restaurant_7, "str. Renasterii Nationale,5, Chisinau 2005, Moldova"));
-        arrayList.add(new ItemList("Marius", "Text 1", R.drawable.restaurant_8, "str. Mihai Eminescu 41 1, Chisinau 2012, Moldova"));
+        arrayList.add(new ItemList(getResources().getString(R.string.restaurant_1), getResources().getString(R.string.random_string), R.drawable.restaurant_1, getResources().getString(R.string.restaurant_location_1)));
+        arrayList.add(new ItemList(getResources().getString(R.string.restaurant_2), getResources().getString(R.string.random_string), R.drawable.restaurant_2, getResources().getString(R.string.restaurant_location_2)));
+        arrayList.add(new ItemList(getResources().getString(R.string.restaurant_3), getResources().getString(R.string.random_string), R.drawable.restaurant_3, getResources().getString(R.string.restaurant_location_3)));
+        arrayList.add(new ItemList(getResources().getString(R.string.restaurant_4), getResources().getString(R.string.random_string), R.drawable.restaurant_4, getResources().getString(R.string.restaurant_location_4)));
+        arrayList.add(new ItemList(getResources().getString(R.string.restaurant_5), getResources().getString(R.string.random_string), R.drawable.restaurant_5, getResources().getString(R.string.restaurant_location_5)));
+        arrayList.add(new ItemList(getResources().getString(R.string.restaurant_6), getResources().getString(R.string.random_string), R.drawable.restaurant_6, getResources().getString(R.string.restaurant_location_6)));
+        arrayList.add(new ItemList(getResources().getString(R.string.restaurant_7), getResources().getString(R.string.random_string), R.drawable.restaurant_7, getResources().getString(R.string.restaurant_location_7)));
+        arrayList.add(new ItemList(getResources().getString(R.string.restaurant_8), getResources().getString(R.string.random_string), R.drawable.restaurant_8, getResources().getString(R.string.restaurant_location_8)));
 
         ListView listView = (ListView) findViewById(R.id.list_item);
         ItemListAdapter itemListAdapter = new ItemListAdapter(this, arrayList, ContextCompat.getColor(this, R.color.color_1));

@@ -19,27 +19,15 @@ public class EventsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_attractions);
 
         final ArrayList<ItemList> arrayList = new ArrayList<>();
-        arrayList.add(new ItemList("Contabilitatea în construcții. Seminar practic", "http://www" +
-                ".civic.md/evenimente/37805-contabilitatea-in-constructii-seminar-practic.html"));
-        arrayList.add(new ItemList("Seed Grant MBA Club / Ediție Specială", "http://www.civic" +
-                ".md/evenimente/37799-seed-grant-mba-club-editie-speciala.html"));
-        arrayList.add(new ItemList("Contabilitatea în organizații necomerciale. Seminar practic",
-                "http://www.civic.md/evenimente/37769-contabilitatea-in-organizatii-necomerciale" +
-                        "-seminar-practic.html"));
-        arrayList.add(new ItemList("Spectacolul Magnificii / Die Glorreichen",
-                "http://www.civic.md/evenimente/37764-spectacolul-magnificii-die-glorreichen" +
-                        ".html"));
-        arrayList.add(new ItemList("Comunicat de presă Forum: Eficiența Energetică", "http://www" +
-                ".civic.md/evenimente/37109-comunicat-de-presa-saptamana-globala-pentru-siguranta" +
-                "-rutiera-a-onu-in-republica-moldova.html"));
-        arrayList.add(new ItemList("Tîrguri cu vînzare organizate de elevi cu spirit " +
-                "antreprenorial.", "http://www.civic" +
-                ".md/evenimente/37703-tirguri-cu-vinzare-organizate-de-elevi-cu-spirit" +
-                "-antreprenorial-editia-2.html"));
-        arrayList.add(new ItemList("„Genele geopolitice” ale moldovenilor: între mit şi " +
-                "realitate, dezbateri", "http://www.civic" +
-                ".md/evenimente/37682-genele-geopolitice-ale-moldovenilor-intre-mit-si-realitate" +
-                "-dezbateri.html"));
+        arrayList.add(new ItemList(getResources().getString(R.string.event_1), getResources().getString(R.string.event_location_1)));
+        arrayList.add(new ItemList(getResources().getString(R.string.event_2), getResources().getString(R.string.event_location_2)));
+        arrayList.add(new ItemList(getResources().getString(R.string.event_3),
+                getResources().getString(R.string.event_location_3)));
+        arrayList.add(new ItemList(getResources().getString(R.string.event_4),
+                getResources().getString(R.string.event_location_4)));
+        arrayList.add(new ItemList(getResources().getString(R.string.event_5), getResources().getString(R.string.event_location_5)));
+        arrayList.add(new ItemList(getResources().getString(R.string.event_6), getResources().getString(R.string.event_location_6)));
+        arrayList.add(new ItemList(getResources().getString(R.string.event_7), getResources().getString(R.string.event_location_7)));
 
         ItemListAdapter itemListAdapter = new ItemListAdapter(this, arrayList, ContextCompat
                 .getColor(this, R.color.color_4));
